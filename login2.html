@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+h2 {
+   text-align: center; 
+}
+
+input[type=text], input[type=password] {
+   width: calc(100% - 20px);
+   padding: 10px;
+   margin-bottom: 20px; 
+}
+
+input[type=checkbox] {
+   margin-bottom: 20px; 
+}
+
+input[type=submit] {
+   padding:10px; 
+}
+
+  </style>
+
+<div class="login-container">
+    <h2>Màn hình đăng nhập</h2>
+    
+    <form action="/login" method="post">
+        <label for="username">Tên đăng nhập:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Mật khẩu:</label><br>
+        <input type="password" id=password name=password"><br><br>
+
+        <input type=checkbox id=remember name=remember">
+        <label for=remember">Ghi nhớ đăng nhập</label><br><br>
+
+        <input id="login" type="submit" value="Đăng nhập">
+    </form> 
+</div>
+
+</body>
+</html>
